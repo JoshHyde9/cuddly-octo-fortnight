@@ -1,0 +1,60 @@
+@use "./partials/variables" as *;
+@use "./partials/global" as *;
+@use "./partials/typography" as *;
+@use "./partials/util" as *;
+
+// Nav bar
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  max-width: 98%;
+  height: 5rem;
+
+  &__list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    height: 100%;
+
+    &-item {
+      a {
+        text-decoration: none;
+        color: $colour-nav-item;
+
+        &:hover {
+          color: $colour-primary;
+          transition: all ease-in-out 300ms;
+        }
+      }
+    }
+  }
+}
+
+// Landing section
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  text-align: center;
+  padding: 0 10px;
+
+  &__heading {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+
+    &--sub {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+// About page
+#about {
+  min-height: 100vh;
+}

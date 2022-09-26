@@ -1,0 +1,28 @@
+@use "./variables" as *;
+
+.btn {
+  padding: 8px 20px;
+  outline: none;
+  border: 3px;
+  border-radius: 8px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  color: #000;
+
+  &:hover {
+    transition: all ease-in-out 300ms;
+    cursor: pointer;
+  }
+
+  &--primary {
+    background-color: $colour-primary;
+    padding: 10px 2.5rem;
+
+    &:hover {
+      background-color: $colour-secondary;
+    }
+  }
+}
