@@ -61,8 +61,66 @@
 // About page
 #about {
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
 }
 
-.about__grid {
-  display: flex;
+.about {
+  &__grid {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+
+    &-item {
+      flex-grow: 1;
+
+      &:first-child {
+        width: 60%;
+      }
+
+      &-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin: 10px;
+
+        img {
+          border-radius: 10px;
+          margin-bottom: 0.8rem;
+          transition: all ease-in-out 300ms;
+
+          &:hover {
+            transform: scale(105%);
+            filter: opacity(90%);
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  &__heading {
+    padding: 5px 0;
+  }
+
+  &__paragraph {
+    padding: 5px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about__grid {
+    flex-direction: column;
+    width: 100%;
+
+    &-item {
+      &:first-child {
+        width: 100%;
+      }
+    }
+  }
 }

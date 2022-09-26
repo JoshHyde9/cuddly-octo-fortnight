@@ -99,8 +99,54 @@ h6 {
 
 #about {
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
 }
 
 .about__grid {
   display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 80%;
+}
+.about__grid-item {
+  flex-grow: 1;
+}
+.about__grid-item:first-child {
+  width: 60%;
+}
+.about__grid-item-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 10px;
+}
+.about__grid-item-card img {
+  border-radius: 10px;
+  margin-bottom: 0.8rem;
+  transition: all ease-in-out 300ms;
+}
+.about__grid-item-card img:hover {
+  transform: scale(105%);
+  filter: opacity(90%);
+  cursor: pointer;
+}
+.about__heading {
+  padding: 5px 0;
+}
+.about__paragraph {
+  padding: 5px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .about__grid {
+    flex-direction: column;
+    width: 100%;
+  }
+  .about__grid-item:first-child {
+    width: 100%;
+  }
 }
