@@ -124,12 +124,13 @@ h6 {
   text-align: center;
   margin: 10px;
 }
-.about__grid-item-card img {
+.about__grid-item-card a img {
+  width: 100%;
   border-radius: 10px;
   margin-bottom: 0.8rem;
   transition: all ease-in-out 300ms;
 }
-.about__grid-item-card img:hover {
+.about__grid-item-card a img:hover {
   transform: scale(105%);
   filter: opacity(90%);
   cursor: pointer;

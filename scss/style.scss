@@ -88,15 +88,18 @@
         text-align: center;
         margin: 10px;
 
-        img {
-          border-radius: 10px;
-          margin-bottom: 0.8rem;
-          transition: all ease-in-out 300ms;
+        a {
+          img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 0.8rem;
+            transition: all ease-in-out 300ms;
 
-          &:hover {
-            transform: scale(105%);
-            filter: opacity(90%);
-            cursor: pointer;
+            &:hover {
+              transform: scale(105%);
+              filter: opacity(90%);
+              cursor: pointer;
+            }
           }
         }
       }
