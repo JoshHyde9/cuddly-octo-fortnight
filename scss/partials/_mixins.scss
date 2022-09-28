@@ -1,11 +1,12 @@
 @use "./variables" as *;
 
+// Fancy hover for buttons
 @mixin button-hover($colour: $colour-primary) {
   &::before,
   &::after {
     right: 0;
     bottom: 0;
-    background-color: $colour-primary;
+    background-color: $colour;
   }
 
   &::before {
@@ -46,7 +47,7 @@
   span::after {
     left: 0;
     top: 0;
-    background-color: $colour-primary;
+    background-color: $colour;
   }
 
   span::before {
@@ -66,5 +67,21 @@
   &:hover > span::before,
   &:hover > span::after {
     transform: translate(0, 0);
+  }
+}
+
+// General hover effect
+@mixin general-hover($colour: $colour-secondary) {
+  &:hover {
+    stroke: $colour;
+    color: $colour;
+    transition: all ease-in-out 300ms;
+  }
+}
+
+// Media query
+@mixin media-queries($min, $max) {
+  @media only screen and (min-width: ($min + 1px)) and (max-width: $max) {
+    @content;
   }
 }
