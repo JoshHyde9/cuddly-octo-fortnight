@@ -52,6 +52,11 @@ h6 {
   background-color: #ff74ff;
 }
 
+.inverted {
+  color: #fefefe;
+  background-color: #18181b;
+}
+
 .nav {
   display: flex;
   justify-content: flex-end;
@@ -146,31 +151,68 @@ h6 {
   min-height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: space-around;
   flex-direction: column;
+}
+#work .work__intro {
+  font-size: 2.5rem;
+}
+@media only screen and (min-width: 1px) and (max-width: 640px) {
+  #work .work__intro {
+    font-size: 1.3rem;
+  }
 }
 #work .work__project {
   display: flex;
   align-items: center;
-  height: 20rem;
-  background-color: #f9f9f9;
+  flex-direction: column;
+  height: 100%;
   padding: 1rem;
   border-radius: 10px;
 }
+@media only screen and (min-width: 769px) and (max-width: 99999999px) {
+  #work .work__project {
+    flex-direction: row;
+    background: linear-gradient(180deg, #18181b 0%, #131316 100%);
+  }
+}
 #work .work__project--side-heading {
-  rotate: 270deg;
-  height: 2rem;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+@media only screen and (min-width: 769px) and (max-width: 99999999px) {
+  #work .work__project--side-heading {
+    font-size: 1rem;
+    margin-bottom: 0;
+    rotate: 270deg;
+    width: 6rem;
+  }
 }
 #work .work__project--img {
   display: block;
-  border-radius: 10px;
+  height: auto;
+  width: 65%;
+  margin-bottom: 0.5rem;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 #work .work__project-flex {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
-  height: 100%;
-  margin-left: 1rem;
+  padding-bottom: 1rem;
+}
+#work .work__project-flex h3,
+#work .work__project-flex a,
+#work .work__project-flex div {
+  margin: 0.25rem 0;
+}
+@media only screen and (min-width: 769px) and (max-width: 99999999px) {
+  #work .work__project-flex {
+    margin-left: 1rem;
+    height: 17rem;
+  }
 }
 #work .work__project-flex--main-heading {
   font-size: 1.5rem;
@@ -227,6 +269,14 @@ h6 {
 }
 #work .work__project-flex--link:hover::before, #work .work__project-flex--link:hover::after, #work .work__project-flex--link:hover > span::before, #work .work__project-flex--link:hover > span::after {
   transform: translate(0, 0);
+}
+#work .work__project-flex--other-links svg {
+  stroke: #ff88ff;
+}
+#work .work__project-flex--other-links svg:hover {
+  stroke: #ff74ff;
+  color: #ff74ff;
+  transition: all ease-in-out 300ms;
 }
 
 @media screen and (max-width: 768px) {
