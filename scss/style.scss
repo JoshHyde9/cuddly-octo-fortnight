@@ -76,11 +76,20 @@
     margin: 0 auto;
     width: 80%;
 
+    @include media-queries(0px, $md) {
+      flex-direction: column;
+      width: 100%;
+    }
+
     &-item {
       flex-grow: 1;
 
       &:first-child {
         width: 60%;
+
+        @include media-queries(0px, $md) {
+          width: 100%;
+        }
       }
 
       &-card {
@@ -282,20 +291,6 @@
           width: 2rem;
           height: 2rem;
         }
-      }
-    }
-  }
-}
-
-// TODO: Make media queries mixins
-@media screen and (max-width: 768px) {
-  .about__grid {
-    flex-direction: column;
-    width: 100%;
-
-    &-item {
-      &:first-child {
-        width: 100%;
       }
     }
   }

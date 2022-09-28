@@ -117,11 +117,22 @@ h6 {
   margin: 0 auto;
   width: 80%;
 }
+@media only screen and (min-width: 1px) and (max-width: 768px) {
+  .about__grid {
+    flex-direction: column;
+    width: 100%;
+  }
+}
 .about__grid-item {
   flex-grow: 1;
 }
 .about__grid-item:first-child {
   width: 60%;
+}
+@media only screen and (min-width: 1px) and (max-width: 768px) {
+  .about__grid-item:first-child {
+    width: 100%;
+  }
 }
 .about__grid-item-card {
   display: flex;
@@ -346,15 +357,5 @@ h6 {
   .skills-grid__item svg {
     width: 2rem;
     height: 2rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .about__grid {
-    flex-direction: column;
-    width: 100%;
-  }
-  .about__grid-item:first-child {
-    width: 100%;
   }
 }
