@@ -184,8 +184,14 @@ h6 {
   padding: 1rem;
   border-radius: 10px;
 }
-@media only screen and (min-width: 769px) and (max-width: 99999999px) {
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
   #work .work__project {
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 99999999px) {
+  #work .work__project {
+    width: 40%;
     flex-direction: row;
     background: linear-gradient(180deg, #18181b 0%, #131316 100%);
   }
@@ -205,10 +211,15 @@ h6 {
 #work .work__project--img {
   display: block;
   height: auto;
-  width: 65%;
+  width: 100%;
   margin-bottom: 0.5rem;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
+}
+@media only screen and (min-width: 769px) and (max-width: 99999999px) {
+  #work .work__project--img {
+    width: 70%;
+  }
 }
 #work .work__project-flex {
   display: flex;
@@ -224,7 +235,7 @@ h6 {
 }
 @media only screen and (min-width: 769px) and (max-width: 99999999px) {
   #work .work__project-flex {
-    margin-left: 1rem;
+    margin-left: 0.6rem;
     height: 17rem;
   }
 }
