@@ -310,7 +310,12 @@ h6 {
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+  gap: 1rem;
+}
+@media only screen and (min-width: 769px) and (max-width: 99999999px) {
+  .skills-grid {
+    gap: 2rem;
+  }
 }
 .skills-grid__item {
   display: flex;
@@ -340,6 +345,11 @@ h6 {
   color: #444;
   font-family: Helvetica, sans-serif;
   font-size: 20px;
+  transition: all ease-in-out 300ms;
+}
+.skills-grid__item .express:hover {
+  transition: all ease-in-out 300ms;
+  filter: opacity(0.7);
 }
 @media only screen and (min-width: 769px) and (max-width: 99999999px) {
   .skills-grid__item .express {
@@ -352,6 +362,21 @@ h6 {
 .skills-grid__item svg {
   width: 1.5rem;
   height: 1.5rem;
+}
+.skills-grid__item svg g,
+.skills-grid__item svg path,
+.skills-grid__item svg rect,
+.skills-grid__item svg use,
+.skills-grid__item svg polygon {
+  transition: all ease-in-out 300ms;
+}
+.skills-grid__item svg:hover g,
+.skills-grid__item svg:hover path,
+.skills-grid__item svg:hover rect,
+.skills-grid__item svg:hover use,
+.skills-grid__item svg:hover polygon {
+  transition: all ease-in-out 300ms;
+  opacity: 0.7;
 }
 @media only screen and (min-width: 769px) and (max-width: 99999999px) {
   .skills-grid__item svg {
