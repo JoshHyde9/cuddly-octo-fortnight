@@ -11,6 +11,8 @@ html {
 
 body {
   height: 100%;
-  width: 100vw;
   background-color: $colour-background-primary;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  color: #000;
 }
