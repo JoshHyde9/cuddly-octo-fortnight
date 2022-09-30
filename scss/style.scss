@@ -6,15 +6,13 @@
 
 // Nav bar
 .nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 5rem;
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
   background-color: $colour-background-primary;
+  @include flex($flex-dir: row);
 
   @include media-queries($lg, 99999999px) {
     justify-content: flex-end;
@@ -22,11 +20,9 @@
 
   &__list {
     list-style-type: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 1.5rem;
     height: 100%;
+    @include flex($flex-dir: row);
 
     @include media-queries($lg, 99999999px) {
       padding-right: 2rem;
@@ -48,13 +44,10 @@
 
 // Landing section
 .header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
   text-align: center;
   padding: 0 10px;
+  @include flex();
 
   &__heading {
     font-size: 4rem;
@@ -70,19 +63,15 @@
 // About page
 #about {
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 0 1rem;
+  @include flex($flex-dir: row);
 }
 
 .about {
   &__grid {
-    display: flex;
-    align-items: center;
     margin: 0 auto;
-    flex-direction: column;
     width: 80%;
+    @include flex();
 
     @include media-queries($lg, 99999999px) {
       flex-direction: row;
@@ -92,17 +81,13 @@
 
     &-item {
       &:last-child {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex($justify: flex-start);
       }
 
       &-card {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         text-align: center;
         margin: 10px;
+        @include flex($items: stretch);
 
         @include media-queries($xl, 99999999px) {
           width: 60%;
@@ -138,10 +123,7 @@
 // Work / projects
 #work {
   min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: column;
+  @include flex($justify: space-around);
 
   .work {
     &__intro {
@@ -158,12 +140,10 @@
     }
 
     &__project {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
       height: 100%;
       padding: 1rem;
       border-radius: $border-radius;
+      @include flex($justify: flex-start);
 
       @include media-queries($md, $lg) {
         width: 80%;
@@ -223,11 +203,8 @@
       }
 
       &-flex {
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        flex-direction: column;
         padding-bottom: 1rem;
+        @include flex($justify: space-evenly);
 
         & h3,
         a,
@@ -273,10 +250,7 @@
 }
 
 .skills {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  @include flex();
   padding: 0 0.5rem;
 
   &__heading {
@@ -295,9 +269,7 @@
     }
 
     &__item {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flex($flex-dir: row);
       gap: 1rem;
 
       @include media-queries($lg, 99999999px) {
@@ -370,14 +342,10 @@
 
 // Contact section
 .contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-
   margin: 0 auto;
   width: 100%;
   min-height: 50vh;
+  @include flex($justify: space-around);
 
   &__intro {
     text-align: center;
@@ -400,10 +368,9 @@
   }
 
   &__flex {
-    display: flex;
-    flex-direction: column;
     gap: 3rem;
     margin: 0 10px;
+    @include flex($justify: flex-start, $items: stretch);
 
     a {
       text-decoration: none;
@@ -418,9 +385,8 @@
     }
 
     &-item {
-      display: flex;
-      align-items: center;
       gap: 1rem;
+      @include flex($justify: flex-start, $flex-dir: row);
 
       svg {
         width: 4rem;
@@ -450,9 +416,7 @@
         position: relative;
 
         #tooltip-text {
-          display: flex;
-          align-items: center;
-          justify-content: center;
+          @include flex($flex-dir: row);
           position: absolute;
           z-index: 1;
 

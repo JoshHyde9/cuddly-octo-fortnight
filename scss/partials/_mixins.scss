@@ -85,3 +85,11 @@
     @content;
   }
 }
+
+// Flex
+@mixin flex($justify: center, $items: center, $flex-dir: column) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $items;
+  flex-direction: $flex-dir;
+}
