@@ -31,6 +31,16 @@ h6 {
 }
 
 .transition,
+.nav__list-item a:hover,
+.about__grid-item-card a img,
+.skills-grid__item .express,
+.skills-grid__item svg g,
+.skills-grid__item svg path,
+.skills-grid__item svg rect,
+.skills-grid__item svg use,
+.skills-grid__item svg polygon,
+.contact__flex-item svg,
+.contact__flex-item svg g,
 .contact__flex-item#tooltip #tooltip-text,
 .btn {
   transition: all ease-in-out 300ms;
@@ -99,7 +109,6 @@ h6 {
 }
 .nav__list-item a:hover {
   color: #ff88ff;
-  transition: all ease-in-out 300ms;
 }
 
 .header {
@@ -166,7 +175,6 @@ h6 {
   width: 100%;
   border-radius: 10px;
   margin-bottom: 0.8rem;
-  transition: all ease-in-out 300ms;
 }
 .about__grid-item-card a img:hover {
   transform: scale(105%);
@@ -411,10 +419,8 @@ h6 {
   color: #444;
   font-family: Helvetica, sans-serif;
   font-size: 20px;
-  transition: all ease-in-out 300ms;
 }
 .skills-grid__item .express:hover {
-  transition: all ease-in-out 300ms;
   filter: opacity(0.7);
 }
 @media only screen and (min-width: 769px) and (max-width: 99999999px) {
@@ -429,19 +435,11 @@ h6 {
   width: 1.5rem;
   height: 1.5rem;
 }
-.skills-grid__item svg g,
-.skills-grid__item svg path,
-.skills-grid__item svg rect,
-.skills-grid__item svg use,
-.skills-grid__item svg polygon {
-  transition: all ease-in-out 300ms;
-}
 .skills-grid__item svg:hover g,
 .skills-grid__item svg:hover path,
 .skills-grid__item svg:hover rect,
 .skills-grid__item svg:hover use,
 .skills-grid__item svg:hover polygon {
-  transition: all ease-in-out 300ms;
   opacity: 0.7;
 }
 @media only screen and (min-width: 769px) and (max-width: 99999999px) {
@@ -507,9 +505,16 @@ h6 {
   height: 4rem;
   stroke: #ff88ff;
 }
+.contact__flex-item svg:hover {
+  stroke: #ff74ff;
+}
 .contact__flex-item svg g {
   fill: #ff88ff;
   stroke: #ff88ff;
+}
+.contact__flex-item svg g:hover {
+  fill: #ff74ff;
+  stroke: #ff74ff;
 }
 .contact__flex-item#tooltip {
   cursor: pointer;
