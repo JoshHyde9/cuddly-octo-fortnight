@@ -244,17 +244,3 @@
     }
   }
 }
-
-// TODO: Make media queries mixins
-@media screen and (max-width: 768px) {
-  .about__grid {
-    flex-direction: column;
-    width: 100%;
-
-    &-item {
-      &:first-child {
-        width: 100%;
-      }
-    }
-  }
-}

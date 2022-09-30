@@ -318,13 +318,3 @@ h6 {
   color: #ff74ff;
   transition: all ease-in-out 300ms;
 }
-
-@media screen and (max-width: 768px) {
-  .about__grid {
-    flex-direction: column;
-    width: 100%;
-  }
-  .about__grid-item:first-child {
-    width: 100%;
-  }
-}
