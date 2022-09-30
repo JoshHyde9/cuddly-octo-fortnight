@@ -173,7 +173,12 @@ h6 {
   margin: 2rem 0;
   font-size: 1.3rem;
 }
-@media only screen and (min-width: 769px) and (max-width: 99999999px) {
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  #work .work__intro {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 99999999px) {
   #work .work__intro {
     font-size: 2.5rem;
   }
