@@ -41,9 +41,9 @@ h6 {
   gap: 6px;
   text-decoration: none;
   color: #000;
+  transition: all ease-in-out 300ms;
 }
 .btn:hover {
-  transition: all ease-in-out 300ms;
   cursor: pointer;
 }
 .btn--primary {

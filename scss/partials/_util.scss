@@ -11,9 +11,9 @@
   gap: 6px;
   text-decoration: none;
   color: #000;
+  transition: all ease-in-out 300ms;
 
   &:hover {
-    transition: all ease-in-out 300ms;
     cursor: pointer;
   }
 
