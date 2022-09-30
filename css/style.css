@@ -530,13 +530,13 @@ h6 {
   position: relative;
 }
 .contact__flex-item#tooltip #tooltip-text {
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  position: absolute;
-  z-index: 1;
-  opacity: 0;
   background-color: rgba(254, 254, 254, 0.9);
   text-align: center;
   border-radius: 10px;

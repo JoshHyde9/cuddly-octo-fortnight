@@ -416,13 +416,12 @@
         position: relative;
 
         #tooltip-text {
-          @include flex($flex-dir: row);
           position: absolute;
           z-index: 1;
-
           opacity: 0;
-
           @extend %transition;
+
+          @include flex($flex-dir: row);
 
           background-color: rgba(
             $color: $colour-background-primary,
