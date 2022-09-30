@@ -451,7 +451,9 @@
           position: absolute;
           z-index: 1;
 
-          visibility: hidden;
+          opacity: 0;
+
+          @extend %transition;
 
           background-color: rgba(
             $color: $colour-background-primary,
@@ -464,7 +466,7 @@
         }
 
         &#tooltip:hover #tooltip-text {
-          visibility: visible;
+          opacity: 1;
         }
       }
     }

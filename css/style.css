@@ -31,6 +31,7 @@ h6 {
 }
 
 .transition,
+.contact__flex-item#tooltip #tooltip-text,
 .btn {
   transition: all ease-in-out 300ms;
 }
@@ -520,7 +521,7 @@ h6 {
   justify-content: center;
   position: absolute;
   z-index: 1;
-  visibility: hidden;
+  opacity: 0;
   background-color: rgba(254, 254, 254, 0.9);
   text-align: center;
   border-radius: 10px;
@@ -528,5 +529,5 @@ h6 {
   height: 100%;
 }
 .contact__flex-item#tooltip#tooltip:hover #tooltip-text {
-  visibility: visible;
+  opacity: 1;
 }
