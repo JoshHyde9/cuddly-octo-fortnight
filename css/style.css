@@ -169,11 +169,12 @@ h6 {
   flex-direction: column;
 }
 #work .work__intro {
-  font-size: 2.5rem;
+  margin: 2rem 0;
+  font-size: 1.3rem;
 }
-@media only screen and (min-width: 1px) and (max-width: 640px) {
+@media only screen and (min-width: 769px) and (max-width: 99999999px) {
   #work .work__intro {
-    font-size: 1.3rem;
+    font-size: 2.5rem;
   }
 }
 #work .work__project {
@@ -191,16 +192,31 @@ h6 {
 }
 @media only screen and (min-width: 1025px) and (max-width: 99999999px) {
   #work .work__project {
-    width: 40%;
     flex-direction: row;
+    margin: 2rem 0;
     background: linear-gradient(180deg, #18181b 0%, #131316 100%);
   }
 }
-#work .work__project--side-heading {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+  #work .work__project {
+    width: 70%;
+  }
 }
-@media only screen and (min-width: 769px) and (max-width: 99999999px) {
+@media only screen and (min-width: 1281px) and (max-width: 99999999px) {
+  #work .work__project {
+    width: 40%;
+  }
+}
+#work .work__project--side-heading {
+  font-size: 0.9rem;
+  margin-bottom: 0.8rem;
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  #work .work__project--side-heading {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 99999999px) {
   #work .work__project--side-heading {
     font-size: 1rem;
     margin-bottom: 0;
@@ -213,12 +229,19 @@ h6 {
   height: auto;
   width: 100%;
   margin-bottom: 0.5rem;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-radius: 10px;
 }
 @media only screen and (min-width: 769px) and (max-width: 99999999px) {
   #work .work__project--img {
     width: 70%;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 99999999px) {
+  #work .work__project--img {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
   }
 }
 #work .work__project-flex {
@@ -233,7 +256,13 @@ h6 {
 #work .work__project-flex div {
   margin: 0.25rem 0;
 }
-@media only screen and (min-width: 769px) and (max-width: 99999999px) {
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  #work .work__project-flex {
+    justify-content: center;
+    height: 10rem;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 99999999px) {
   #work .work__project-flex {
     margin-left: 0.6rem;
     height: 17rem;
@@ -302,179 +331,4 @@ h6 {
   stroke: #ff74ff;
   color: #ff74ff;
   transition: all ease-in-out 300ms;
-}
-
-#skills {
-  min-height: 100vh;
-}
-
-.skills {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 0 0.5rem;
-}
-.skills__heading {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 2rem;
-}
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-}
-@media only screen and (min-width: 769px) and (max-width: 99999999px) {
-  .skills-grid {
-    gap: 2rem;
-  }
-}
-.skills-grid__item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-}
-@media only screen and (min-width: 1025px) and (max-width: 99999999px) {
-  .skills-grid__item {
-    gap: 2rem;
-  }
-}
-.skills-grid__item--heading {
-  font-size: 1.2rem;
-}
-@media only screen and (min-width: 769px) and (max-width: 99999999px) {
-  .skills-grid__item--heading {
-    font-size: 1.8rem;
-  }
-}
-.skills-grid__item .nextjs {
-  width: 4rem;
-}
-.skills-grid__item .express {
-  text-decoration: none;
-  font-weight: 100;
-  color: #444;
-  font-family: Helvetica, sans-serif;
-  font-size: 20px;
-  transition: all ease-in-out 300ms;
-}
-.skills-grid__item .express:hover {
-  transition: all ease-in-out 300ms;
-  filter: opacity(0.7);
-}
-@media only screen and (min-width: 769px) and (max-width: 99999999px) {
-  .skills-grid__item .express {
-    font-size: 25px;
-  }
-}
-.skills-grid__item .redis {
-  width: 4rem;
-}
-.skills-grid__item svg {
-  width: 1.5rem;
-  height: 1.5rem;
-}
-.skills-grid__item svg g,
-.skills-grid__item svg path,
-.skills-grid__item svg rect,
-.skills-grid__item svg use,
-.skills-grid__item svg polygon {
-  transition: all ease-in-out 300ms;
-}
-.skills-grid__item svg:hover g,
-.skills-grid__item svg:hover path,
-.skills-grid__item svg:hover rect,
-.skills-grid__item svg:hover use,
-.skills-grid__item svg:hover polygon {
-  transition: all ease-in-out 300ms;
-  opacity: 0.7;
-}
-@media only screen and (min-width: 769px) and (max-width: 99999999px) {
-  .skills-grid__item svg {
-    width: 2rem;
-    height: 2rem;
-  }
-}
-
-.contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  margin: 0 auto;
-  width: 100%;
-  min-height: 50vh;
-}
-.contact__intro {
-  text-align: center;
-}
-.contact__intro--heading {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
-@media only screen and (min-width: 769px) and (max-width: 99999999px) {
-  .contact__intro--heading {
-    font-size: 2.5rem;
-  }
-}
-.contact__intro--heading-sub {
-  font-size: 1.2rem;
-}
-@media only screen and (min-width: 769px) and (max-width: 99999999px) {
-  .contact__intro--heading-sub {
-    font-size: 2rem;
-  }
-}
-.contact__flex {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-  margin: 0 10px;
-}
-.contact__flex a {
-  text-decoration: none;
-}
-.contact__flex a:visited {
-  color: #000;
-}
-@media only screen and (min-width: 1025px) and (max-width: 99999999px) {
-  .contact__flex {
-    flex-direction: row;
-  }
-}
-.contact__flex-item {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-.contact__flex-item svg {
-  width: 4rem;
-  height: 4rem;
-  stroke: #ff88ff;
-}
-.contact__flex-item svg g {
-  fill: #ff88ff;
-  stroke: #ff88ff;
-}
-.contact__flex-item#tooltip {
-  cursor: pointer;
-  position: relative;
-}
-.contact__flex-item#tooltip #tooltip-text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  z-index: 1;
-  visibility: hidden;
-  background-color: rgba(254, 254, 254, 0.9);
-  text-align: center;
-  border-radius: 10px;
-  width: 100%;
-  height: 100%;
-}
-.contact__flex-item#tooltip#tooltip:hover #tooltip-text {
-  visibility: visible;
 }
