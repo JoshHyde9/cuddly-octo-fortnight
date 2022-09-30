@@ -30,6 +30,11 @@ h6 {
   font-weight: bold;
 }
 
+.transition,
+.btn {
+  transition: all ease-in-out 300ms;
+}
+
 .btn {
   padding: 8px 20px;
   outline: none;
@@ -41,7 +46,6 @@ h6 {
   gap: 6px;
   text-decoration: none;
   color: #000;
-  transition: all ease-in-out 300ms;
 }
 .btn:hover {
   cursor: pointer;
