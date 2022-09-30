@@ -74,21 +74,26 @@
     display: flex;
     align-items: center;
     margin: 0 auto;
+    flex-direction: column;
     width: 80%;
 
-    @include media-queries(0px, $md) {
-      flex-direction: column;
-      width: 100%;
+    @include media-queries($lg, 99999999px) {
+      flex-direction: row;
+      width: 80%;
     }
 
     &-item {
       flex-grow: 1;
 
-      &:first-child {
-        width: 60%;
+      &:last-child {
+        width: 100%;
 
-        @include media-queries(0px, $md) {
-          width: 100%;
+        @include media-queries($md, $lg) {
+          width: 70%;
+        }
+
+        @include media-queries($lg, 99999999px) {
+          width: 80%;
         }
       }
 
