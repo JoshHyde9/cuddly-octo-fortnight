@@ -65,11 +65,19 @@ h6 {
 
 .nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   height: 5rem;
   position: fixed;
-  right: 2rem;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #fefefe;
+}
+@media only screen and (min-width: 1025px) and (max-width: 99999999px) {
+  .nav {
+    justify-content: flex-end;
+  }
 }
 .nav__list {
   list-style-type: none;
@@ -78,6 +86,11 @@ h6 {
   align-items: center;
   gap: 1.5rem;
   height: 100%;
+}
+@media only screen and (min-width: 1025px) and (max-width: 99999999px) {
+  .nav__list {
+    padding-right: 2rem;
+  }
 }
 .nav__list-item a {
   text-decoration: none;
