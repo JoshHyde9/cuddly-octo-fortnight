@@ -123,24 +123,14 @@ h6 {
 @media only screen and (min-width: 1025px) and (max-width: 99999999px) {
   .about__grid {
     flex-direction: row;
-    width: 80%;
+    flex-grow: 2 1 auto;
+    gap: 1rem;
   }
-}
-.about__grid-item {
-  flex-grow: 1;
 }
 .about__grid-item:last-child {
-  width: 100%;
-}
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-  .about__grid-item:last-child {
-    width: 70%;
-  }
-}
-@media only screen and (min-width: 1025px) and (max-width: 99999999px) {
-  .about__grid-item:last-child {
-    width: 80%;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .about__grid-item-card {
   display: flex;
@@ -148,6 +138,11 @@ h6 {
   justify-content: center;
   text-align: center;
   margin: 10px;
+}
+@media only screen and (min-width: 1281px) and (max-width: 99999999px) {
+  .about__grid-item-card {
+    width: 60%;
+  }
 }
 .about__grid-item-card a img {
   width: 100%;
