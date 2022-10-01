@@ -493,6 +493,7 @@ h6 {
 }
 .contact__flex a {
   text-decoration: none;
+  color: #000;
 }
 .contact__flex a:visited {
   color: #000;
